@@ -1,6 +1,6 @@
 # Technical-Task
 
-#В проекте исполюзуются технологии как:
+#В проекте используются технологии как:
 #Spring Boot 3.4.2
 Spring Data JPA SQL
 Liquibase Migration SQL
