@@ -58,10 +58,10 @@ public class HotelService {
                 hotels.forEach(hotel -> histogram.merge(hotel.getBrand(), 1L, Long::sum));
                 break;
             case "city":
-                hotels.forEach(hotel -> histogram.merge(hotel.getAddress().getCity(), 1L, Long::sum));
+                hotels.forEach(hotel -> histogram.merge(hotel.getAdres().getCity(), 1L, Long::sum));
                 break;
             case "county":
-                hotels.forEach(hotel -> histogram.merge(hotel.getAddress().getCounty(), 1L, Long::sum));
+                hotels.forEach(hotel -> histogram.merge(hotel.getAdres().getCounty(), 1L, Long::sum));
                 break;
             case "amenities":
                 hotels.forEach(hotel -> hotel.getAmenities().forEach(a -> histogram.merge(a, 1L, Long::sum)));

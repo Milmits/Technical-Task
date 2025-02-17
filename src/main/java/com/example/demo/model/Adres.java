@@ -3,7 +3,7 @@ package com.example.demo.model;
 import jakarta.persistence.Embeddable;
 
 @Embeddable
-public class Address {
+public class Adres {
     private int houseNumber;
     private String street;
     private String city;
@@ -26,5 +26,3 @@ public class Address {
     public String getPostCode() { return postCode; }
     public void setPostCode(String postCode) { this.postCode = postCode; }
 }
-
-

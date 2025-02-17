@@ -15,7 +15,7 @@ public class Hotel {
     private String description;
 
     @Embedded
-    private Address address;
+    private Adres address;
 
     @Embedded
     private Contacts contacts;
@@ -41,8 +41,8 @@ public class Hotel {
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
 
-    public Address getAddress() { return address; }
-    public void setAddress(Address address) { this.address = address; }
+    public Adres getAdres() { return address; }
+    public void setAddress(Adres address) { this.address = address; }
 
     public Contacts getContacts() { return contacts; }
     public void setContacts(Contacts contacts) { this.contacts = contacts; }
@@ -53,6 +53,7 @@ public class Hotel {
     public Set<String> getAmenities() { return amenities; }
     public void setAmenities(Set<String> amenities) { this.amenities = amenities; }
 }
+
 
 
 
